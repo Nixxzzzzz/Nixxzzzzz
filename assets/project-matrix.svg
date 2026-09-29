@@ -1,0 +1,179 @@
+<svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150f2b"/>
+      <stop offset="100%" stop-color="#0a0715"/>
+    </linearGradient>
+
+    <linearGradient id="border-glow-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <linearGradient id="border-glow-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes radarSweep {
+        0% { r: 4; opacity: 1; stroke-width: 1.5; }
+        100% { r: 18; opacity: 0; stroke-width: 0.5; }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -60; }
+      }
+      @keyframes cardBreathe {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(192,132,252,0.4)); }
+      }
+      .radar-ping {
+        animation: radarSweep 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      .circuit-dash {
+        stroke-dasharray: 4, 4;
+        animation: dashMove 2s linear infinite;
+      }
+      .card-glow {
+        animation: cardBreathe 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- ==================== TILE 1: TRUCK TRACKER (TOP LEFT) ==================== -->
+  <g transform="translate(0, 0)">
+    <rect x="2" y="2" width="430" height="140" rx="12" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="2" y="2" width="430" height="140" rx="12" fill="none" stroke="url(#border-glow-cyan)" stroke-width="1"/>
+
+    <!-- Radar Beacon -->
+    <circle cx="28" cy="28" r="4.5" fill="#38bdf8" filter="url(#soft-glow)"/>
+    <circle cx="28" cy="28" r="4.5" fill="none" stroke="#38bdf8" class="radar-ping"/>
+
+    <text x="44" y="32" font-family="'Orbitron', monospace" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="0.8">
+      🛰️ TRUCK TRACKER &amp; TELEMATICS
+    </text>
+
+    <text x="24" y="62" font-family="'Inter', sans-serif" font-size="11.5" fill="#cbd5e1">
+      Multi-stop fleet dispatch engine with live coordinate synchronization &amp; route telemetry.
+    </text>
+
+    <!-- Mini Live Telemetry Pill -->
+    <g transform="translate(24, 76)">
+      <rect width="180" height="22" rx="4" fill="#0f172a" stroke="#1e293b"/>
+      <text x="10" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#38bdf8">GPS: 37.77° N, 122.41° W</text>
+    </g>
+
+    <!-- Badges -->
+    <g transform="translate(24, 108)">
+      <rect x="0" y="0" width="85" height="22" rx="4" fill="#1b1c3a"/>
+      <text x="42" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#bae6fd">TypeScript</text>
+
+      <rect x="95" y="0" width="65" height="22" rx="4" fill="#1b1c3a"/>
+      <text x="127" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#c084fc">Python</text>
+
+      <rect x="170" y="0" width="85" height="22" rx="4" fill="#1b1c3a"/>
+      <text x="212" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#86efac">Telematics</text>
+    </g>
+  </g>
+
+  <!-- ==================== TILE 2: HARDWARE & EMBEDDED (TOP RIGHT) ==================== -->
+  <g transform="translate(450, 0)">
+    <rect x="0" y="2" width="430" height="140" rx="12" fill="url(#card-grad)" stroke="#ec4899" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect x="0" y="2" width="430" height="140" rx="12" fill="none" stroke="url(#border-glow-pink)" stroke-width="1"/>
+
+    <circle cx="26" cy="28" r="4.5" fill="#f472b6" filter="url(#soft-glow)"/>
+    <text x="42" y="32" font-family="'Orbitron', monospace" font-size="12" font-weight="700" fill="#f472b6" letter-spacing="0.8">
+      ⚡ EMBEDDED CIRCUITS &amp; IOT LAB
+    </text>
+
+    <text x="22" y="62" font-family="'Inter', sans-serif" font-size="11.5" fill="#cbd5e1">
+      Hardware interfacing, microcontroller firmware, and sensor signal acquisition circuits.
+    </text>
+
+    <!-- Mini Circuit Wires Animation -->
+    <g transform="translate(22, 78)">
+      <line x1="0" y1="8" x2="220" y2="8" stroke="#f472b6" stroke-width="1.2" class="circuit-dash" opacity="0.8"/>
+      <circle cx="225" cy="8" r="3" fill="#f472b6" filter="url(#soft-glow)"/>
+    </g>
+
+    <!-- Badges -->
+    <g transform="translate(22, 108)">
+      <rect x="0" y="0" width="60" height="22" rx="4" fill="#2d173a"/>
+      <text x="30" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#fbcfe8">C/C++</text>
+
+      <rect x="70" y="0" width="70" height="22" rx="4" fill="#2d173a"/>
+      <text x="105" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a7f3d0">Arduino</text>
+
+      <rect x="150" y="0" width="65" height="22" rx="4" fill="#2d173a"/>
+      <text x="182" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#fed7aa">ESP32</text>
+
+      <rect x="225" y="0" width="80" height="22" rx="4" fill="#2d173a"/>
+      <text x="265" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#fbcfe8">Sensors</text>
+    </g>
+  </g>
+
+  <!-- ==================== TILE 3: FOOD_ON (BOTTOM LEFT) ==================== -->
+  <g transform="translate(0, 156)">
+    <rect x="2" y="0" width="430" height="140" rx="12" fill="url(#card-grad)" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.4"/>
+    
+    <circle cx="28" cy="26" r="4.5" fill="#c084fc" filter="url(#soft-glow)"/>
+    <text x="44" y="30" font-family="'Orbitron', monospace" font-size="12" font-weight="700" fill="#c084fc" letter-spacing="0.8">
+      🍱 FOOD_ON &amp; WEB PLATFORMS
+    </text>
+
+    <text x="24" y="60" font-family="'Inter', sans-serif" font-size="11.5" fill="#cbd5e1">
+      Dynamic web application for interactive dining, digital menu ordering, and reactive UI state.
+    </text>
+
+    <!-- Badges -->
+    <g transform="translate(24, 102)">
+      <rect x="0" y="0" width="90" height="22" rx="4" fill="#1b1433"/>
+      <text x="45" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#fde047">JavaScript</text>
+
+      <rect x="100" y="0" width="70" height="22" rx="4" fill="#1b1433"/>
+      <text x="135" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#67e8f9">HTML5</text>
+
+      <rect x="180" y="0" width="60" height="22" rx="4" fill="#1b1433"/>
+      <text x="210" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f472b6">CSS3</text>
+
+      <rect x="250" y="0" width="70" height="22" rx="4" fill="#1b1433"/>
+      <text x="285" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#e9d5ff">UI/UX</text>
+    </g>
+  </g>
+
+  <!-- ==================== TILE 4: TECHGROWW COMMUNITY (BOTTOM RIGHT) ==================== -->
+  <g transform="translate(450, 156)">
+    <rect x="0" y="0" width="430" height="140" rx="12" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.4"/>
+
+    <circle cx="26" cy="26" r="4.5" fill="#34d399" filter="url(#soft-glow)"/>
+    <text x="42" y="30" font-family="'Orbitron', monospace" font-size="12" font-weight="700" fill="#34d399" letter-spacing="0.8">
+      🌱 TECHGROWW COMMUNITY ECOSYSTEM
+    </text>
+
+    <text x="22" y="60" font-family="'Inter', sans-serif" font-size="11.5" fill="#cbd5e1">
+      Digital educational platform designed around technical student learning and community resources.
+    </text>
+
+    <!-- Badges -->
+    <g transform="translate(22, 102)">
+      <rect x="0" y="0" width="115" height="22" rx="4" fill="#0f2b23"/>
+      <text x="57" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a7f3d0">Web Architecture</text>
+
+      <rect x="125" y="0" width="80" height="22" rx="4" fill="#0f2b23"/>
+      <text x="165" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#86efac">Responsive</text>
+
+      <rect x="215" y="0" width="85" height="22" rx="4" fill="#0f2b23"/>
+      <text x="257" y="15" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#6ee7b7">Community</text>
+    </g>
+  </g>
+</svg>

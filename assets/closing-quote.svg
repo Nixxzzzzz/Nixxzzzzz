@@ -1,0 +1,73 @@
+<svg viewBox="0 0 880 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="quote-box" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140d2b"/>
+      <stop offset="50%" stop-color="#0b0718"/>
+      <stop offset="100%" stop-color="#070410"/>
+    </linearGradient>
+
+    <linearGradient id="shimmer-quote" x1="-100%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="30%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+      <animate attributeName="x1" from="-100%" to="100%" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" from="0%" to="200%" dur="4.5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="comet-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f472b6" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow-fx" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes glideUnderline {
+        0% { stroke-dashoffset: 800; }
+        100% { stroke-dashoffset: -800; }
+      }
+      @keyframes borderBreathe {
+        0%, 100% { stroke-opacity: 0.35; }
+        50% { stroke-opacity: 0.85; filter: drop-shadow(0 0 8px rgba(244,114,182,0.45)); }
+      }
+      .laser-line {
+        stroke-dasharray: 120, 240;
+        animation: glideUnderline 3.5s linear infinite;
+      }
+      .border-pulse {
+        animation: borderBreathe 3.5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Box -->
+  <rect x="2" y="2" width="876" height="68" rx="12" fill="url(#quote-box)" stroke="#1e1838" stroke-width="1.2"/>
+  <rect class="border-pulse" x="2" y="2" width="876" height="68" rx="12" fill="none" stroke="#c084fc" stroke-width="1.4"/>
+
+  <!-- Left Star -->
+  <path d="M 38 28 Q 38 35 31 35 Q 38 35 38 42 Q 38 35 45 35 Q 38 35 38 28 Z" fill="#67e8f9" filter="url(#glow-fx)"/>
+
+  <!-- Right Star -->
+  <path d="M 842 28 Q 842 35 835 35 Q 842 35 842 42 Q 842 35 849 35 Q 842 35 842 28 Z" fill="#f472b6" filter="url(#glow-fx)"/>
+
+  <!-- Main Quote Text -->
+  <g filter="url(#glow-fx)">
+    <text x="440" y="40" text-anchor="middle" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="600" letter-spacing="0.4">
+      <tspan fill="url(#shimmer-quote)">“Unraveling the wonders of technology, where silicon hardware meets intelligent software.”</tspan>
+      <tspan fill="#f472b6" font-weight="700"> — Sonia</tspan>
+    </text>
+  </g>
+
+  <!-- Animated Comet Laser Underline -->
+  <line x1="120" y1="54" x2="760" y2="54" stroke="#1f1838" stroke-width="1" stroke-opacity="0.4"/>
+  <line x1="120" y1="54" x2="760" y2="54" stroke="url(#comet-beam)" stroke-width="2" stroke-linecap="round" class="laser-line" filter="url(#glow-fx)"/>
+</svg>
