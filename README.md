@@ -1,6 +1,6 @@
 <!-- ==================== HERO SHOWCASE BANNER ==================== -->
 <div align="center">
-  <img src="assets/hero-showcase.svg" width="100%" alt="Sonia - Electronics and Computer Science Engineering"/>
+  <img src="assets/hero-banner.svg" width="100%" alt="Sonia - Electronics and Computer Science Engineering"/>
 </div>
 
 <br/>
