@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1200 8" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rose-laser-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#c084fc" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#f472b6" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#c084fc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="comet-pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="laser-glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes glideLaser {
+        0% { stroke-dashoffset: 1200; }
+        100% { stroke-dashoffset: -1200; }
+      }
+      .laser-comet {
+        stroke-dasharray: 200, 400;
+        animation: glideLaser 3s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Base Line -->
+  <line x1="40" y1="4" x2="1160" y2="4" stroke="url(#rose-laser-line)" stroke-width="1.8" filter="url(#laser-glow)"/>
+
+  <!-- Animated Comet Pulse -->
+  <line x1="40" y1="4" x2="1160" y2="4" stroke="url(#comet-pulse)" stroke-width="3" stroke-linecap="round" class="laser-comet" filter="url(#laser-glow)"/>
+</svg>

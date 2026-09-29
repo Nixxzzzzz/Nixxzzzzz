@@ -1,0 +1,162 @@
+<svg viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sonia - Electronics & Computer Science">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="sky-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a16"/>
+      <stop offset="45%" stop-color="#140f29"/>
+      <stop offset="85%" stop-color="#1a1130"/>
+      <stop offset="100%" stop-color="#0a0a16"/>
+    </linearGradient>
+
+    <!-- Aurora Waves -->
+    <radialGradient id="aurora-pink" cx="30%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.32"/>
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="aurora-cyan" cx="75%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title Gradient Shimmer -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="35%" stop-color="#c084fc"/>
+      <stop offset="65%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="star-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="banner-clip">
+      <rect x="0" y="0" width="1200" height="260" rx="14"/>
+    </clipPath>
+
+    <style>
+      @keyframes floatConstellation {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes twinkleStar {
+        0%, 100% { opacity: 0.3; transform: scale(0.7); }
+        50% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 6px #f472b6); }
+      }
+      @keyframes titlePulse {
+        0%, 100% { filter: drop-shadow(0 0 12px rgba(244,114,182,0.5)); }
+        50% { filter: drop-shadow(0 0 24px rgba(192,132,252,0.85)); }
+      }
+      @keyframes cursorBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes lineDash {
+        to { stroke-dashoffset: -80; }
+      }
+      .star-twinkle { animation: twinkleStar 3s ease-in-out infinite; }
+      .star-delayed { animation: twinkleStar 3s ease-in-out 1.5s infinite; }
+      .constellation { animation: floatConstellation 6s ease-in-out infinite; }
+      .main-title { animation: titlePulse 4.5s ease-in-out infinite; }
+      .cursor { animation: cursorBlink 0.9s steps(1) infinite; }
+      .circuit-line {
+        stroke-dasharray: 4, 6;
+        animation: lineDash 2.5s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#banner-clip)">
+    <!-- Base Canvas -->
+    <rect width="1200" height="260" fill="url(#sky-bg)"/>
+
+    <!-- Nebula Auroras -->
+    <rect width="1200" height="260" fill="url(#aurora-pink)"/>
+    <rect width="1200" height="260" fill="url(#aurora-cyan)"/>
+
+    <!-- Background Grid Grid Lines -->
+    <g stroke="#a855f7" stroke-width="0.5" opacity="0.08">
+      <line x1="100" y1="0" x2="100" y2="260"/>
+      <line x1="300" y1="0" x2="300" y2="260"/>
+      <line x1="500" y1="0" x2="500" y2="260"/>
+      <line x1="700" y1="0" x2="700" y2="260"/>
+      <line x1="900" y1="0" x2="900" y2="260"/>
+      <line x1="1100" y1="0" x2="1100" y2="260"/>
+      <line x1="0" y1="65" x2="1200" y2="65"/>
+      <line x1="0" y1="130" x2="1200" y2="130"/>
+      <line x1="0" y1="195" x2="1200" y2="195"/>
+    </g>
+
+    <!-- Circuit Constellations (Left Side) -->
+    <g class="constellation" opacity="0.75">
+      <circle cx="80" cy="50" r="3.5" fill="#f472b6" filter="url(#star-glow)"/>
+      <circle cx="160" cy="90" r="4.5" fill="#c084fc" filter="url(#star-glow)"/>
+      <circle cx="110" cy="170" r="3.5" fill="#38bdf8" filter="url(#star-glow)"/>
+      <circle cx="210" cy="140" r="4" fill="#f472b6" filter="url(#star-glow)"/>
+      <line x1="80" y1="50" x2="160" y2="90" stroke="#f472b6" stroke-width="1.2" class="circuit-line"/>
+      <line x1="160" y1="90" x2="210" y2="140" stroke="#c084fc" stroke-width="1.2" class="circuit-line"/>
+      <line x1="210" y1="140" x2="110" y2="170" stroke="#38bdf8" stroke-width="1.2" class="circuit-line"/>
+    </g>
+
+    <!-- Circuit Constellations (Right Side) -->
+    <g class="constellation" opacity="0.75">
+      <circle cx="1120" cy="60" r="3.5" fill="#38bdf8" filter="url(#star-glow)"/>
+      <circle cx="1040" cy="100" r="4.5" fill="#c084fc" filter="url(#star-glow)"/>
+      <circle cx="1090" cy="180" r="3.5" fill="#f472b6" filter="url(#star-glow)"/>
+      <circle cx="990" cy="150" r="4" fill="#38bdf8" filter="url(#star-glow)"/>
+      <line x1="1120" y1="60" x2="1040" y2="100" stroke="#38bdf8" stroke-width="1.2" class="circuit-line"/>
+      <line x1="1040" y1="100" x2="990" y2="150" stroke="#c084fc" stroke-width="1.2" class="circuit-line"/>
+      <line x1="990" y1="150" x2="1090" y2="180" stroke="#f472b6" stroke-width="1.2" class="circuit-line"/>
+    </g>
+
+    <!-- Twinkling Stars across Canvas -->
+    <path class="star-twinkle" d="M 280 45 Q 280 50 275 50 Q 280 50 280 55 Q 280 50 285 50 Q 280 50 280 45 Z" fill="#fde047"/>
+    <path class="star-delayed" d="M 920 40 Q 920 46 914 46 Q 920 46 920 52 Q 920 46 926 46 Q 920 46 920 40 Z" fill="#f472b6"/>
+    <path class="star-twinkle" d="M 400 210 Q 400 215 395 215 Q 400 215 400 220 Q 400 215 405 215 Q 400 215 400 210 Z" fill="#67e8f9"/>
+    <path class="star-delayed" d="M 800 215 Q 800 220 795 220 Q 800 220 800 225 Q 800 220 805 220 Q 800 220 800 215 Z" fill="#fde047"/>
+
+    <!-- Central Branding -->
+    <!-- Pill Badge -->
+    <g transform="translate(460, 32)">
+      <rect width="280" height="28" rx="14" fill="#18112e" stroke="#c084fc" stroke-width="1.2" opacity="0.9"/>
+      <circle cx="16" cy="14" r="4" fill="#f472b6" filter="url(#star-glow)"/>
+      <text x="30" y="18" font-family="'JetBrains Mono', 'Segoe UI Mono', monospace" font-size="11" font-weight="700" fill="#fbcfe8" letter-spacing="1.5">
+        ELECTRONICS ✕ COMPUTER SCIENCE
+      </text>
+    </g>
+
+    <!-- Main Title: SONIA -->
+    <text class="main-title" x="600" y="132" text-anchor="middle" font-family="'Orbitron', 'Space Grotesk', -apple-system, sans-serif" font-weight="900" font-size="64" fill="url(#title-grad)" letter-spacing="8">
+      SONIA
+    </text>
+
+    <!-- Subtitle with Typing Cursor -->
+    <text x="600" y="174" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="15" font-weight="600" fill="#e9d5ff" letter-spacing="1.5">
+      &gt; UNRAVELING THE WONDERS OF TECHNOLOGY THROUGH SILICON &amp; CODE_<tspan class="cursor" fill="#f472b6">▌</tspan>
+    </text>
+
+    <!-- Subtle Tech Tagline -->
+    <text x="600" y="206" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" letter-spacing="2">
+      HARDWARE ARCHITECTURE · EMBEDDED SYSTEMS · FULL-STACK DEVELOPMENT · IOT
+    </text>
+
+    <!-- Glowing Border Frame -->
+    <rect x="1.5" y="1.5" width="1197" height="257" rx="14" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.4"/>
+  </g>
+</svg>
