@@ -1,0 +1,241 @@
+<svg viewBox="0 0 880 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sonia Technical Arsenal and System Stack">
+  <defs>
+    <linearGradient id="arsenal-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140f29"/>
+      <stop offset="100%" stop-color="#0a0717"/>
+    </linearGradient>
+
+    <linearGradient id="pill-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e153b"/>
+      <stop offset="100%" stop-color="#130d26"/>
+    </linearGradient>
+
+    <linearGradient id="glow-rose" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <linearGradient id="glow-amber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <linearGradient id="glow-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes pulseDot {
+        0%, 100% { opacity: 0.6; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.2); }
+      }
+      .dot-rose { animation: pulseDot 2.8s ease-in-out infinite; transform-origin: 24px 24px; }
+      .dot-cyan { animation: pulseDot 2.8s ease-in-out 0.7s infinite; transform-origin: 474px 24px; }
+      .dot-amber { animation: pulseDot 2.8s ease-in-out 1.4s infinite; transform-origin: 24px 162px; }
+      .dot-emerald { animation: pulseDot 2.8s ease-in-out 2.1s infinite; transform-origin: 474px 162px; }
+      .pill-text { font-family: 'JetBrains Mono', 'Segoe UI', monospace; font-size: 11px; font-weight: 600; fill: #f1f5f9; text-anchor: middle; }
+      .cat-title { font-family: 'Orbitron', 'Inter', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+
+  <!-- ==================== QUADRANT 1: CORE LANGUAGES (TOP-LEFT) ==================== -->
+  <g transform="translate(0, 0)">
+    <rect x="2" y="2" width="430" height="124" rx="12" fill="url(#arsenal-bg)" stroke="#ec4899" stroke-width="1" stroke-opacity="0.35"/>
+    <rect x="2" y="2" width="430" height="124" rx="12" fill="none" stroke="url(#glow-rose)" stroke-width="0.8"/>
+
+    <circle cx="24" cy="24" r="4.5" fill="#f472b6" filter="url(#soft-glow)" class="dot-rose"/>
+    <text x="38" y="28" class="cat-title" fill="#f472b6">PROGRAMMING LANGUAGES</text>
+    <text x="410" y="27" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="end">// 01_CORE</text>
+
+    <!-- Row 1 Pills -->
+    <g transform="translate(18, 44)">
+      <rect width="84" height="28" rx="6" fill="url(#pill-bg)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#38bdf8"/>
+      <text x="50" y="18" class="pill-text">Python</text>
+    </g>
+    <g transform="translate(110, 44)">
+      <rect width="102" height="28" rx="6" fill="url(#pill-bg)" stroke="#60a5fa" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#60a5fa"/>
+      <text x="59" y="18" class="pill-text">TypeScript</text>
+    </g>
+    <g transform="translate(220, 44)">
+      <rect width="102" height="28" rx="6" fill="url(#pill-bg)" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#fbbf24"/>
+      <text x="59" y="18" class="pill-text">JavaScript</text>
+    </g>
+    <g transform="translate(330, 44)">
+      <rect width="80" height="28" rx="6" fill="url(#pill-bg)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#c084fc"/>
+      <text x="47" y="18" class="pill-text">C / C++</text>
+    </g>
+
+    <!-- Row 2 Pills -->
+    <g transform="translate(18, 80)">
+      <rect width="78" height="28" rx="6" fill="url(#pill-bg)" stroke="#f472b6" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="39" y="18" class="pill-text" fill="#fbcfe8">HTML5</text>
+    </g>
+    <g transform="translate(104, 80)">
+      <rect width="78" height="28" rx="6" fill="url(#pill-bg)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="39" y="18" class="pill-text" fill="#c7d2fe">CSS3</text>
+    </g>
+    <g transform="translate(190, 80)">
+      <rect width="74" height="28" rx="6" fill="url(#pill-bg)" stroke="#34d399" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="37" y="18" class="pill-text" fill="#a7f3d0">SQL</text>
+    </g>
+    <g transform="translate(272, 80)">
+      <rect width="138" height="28" rx="6" fill="url(#pill-bg)" stroke="#e879f9" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="69" y="18" class="pill-text" fill="#f5d0fe">Embedded C</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 2: ELECTRONICS & EMBEDDED (TOP-RIGHT) ==================== -->
+  <g transform="translate(450, 0)">
+    <rect x="2" y="2" width="426" height="124" rx="12" fill="url(#arsenal-bg)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.35"/>
+    <rect x="2" y="2" width="426" height="124" rx="12" fill="none" stroke="url(#glow-cyan)" stroke-width="0.8"/>
+
+    <circle cx="24" cy="24" r="4.5" fill="#38bdf8" filter="url(#soft-glow)" class="dot-cyan"/>
+    <text x="38" y="28" class="cat-title" fill="#38bdf8">ELECTRONICS &amp; EMBEDDED</text>
+    <text x="406" y="27" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="end">// 02_SILICON</text>
+
+    <!-- Row 1 Pills -->
+    <g transform="translate(18, 44)">
+      <rect width="90" height="28" rx="6" fill="url(#pill-bg)" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#2dd4bf"/>
+      <text x="53" y="18" class="pill-text">Arduino</text>
+    </g>
+    <g transform="translate(116, 44)">
+      <rect width="84" height="28" rx="6" fill="url(#pill-bg)" stroke="#f43f5e" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#f43f5e"/>
+      <text x="49" y="18" class="pill-text">ESP32</text>
+    </g>
+    <g transform="translate(208, 44)">
+      <rect width="194" height="28" rx="6" fill="url(#pill-bg)" stroke="#a855f7" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#a855f7"/>
+      <text x="105" y="18" class="pill-text">Microcontrollers</text>
+    </g>
+
+    <!-- Row 2 Pills -->
+    <g transform="translate(18, 80)">
+      <rect width="124" height="28" rx="6" fill="url(#pill-bg)" stroke="#fb7185" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="62" y="18" class="pill-text" fill="#fecdd3">Circuit Design</text>
+    </g>
+    <g transform="translate(150, 80)">
+      <rect width="112" height="28" rx="6" fill="url(#pill-bg)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="56" y="18" class="pill-text" fill="#bae6fd">IoT Sensors</text>
+    </g>
+    <g transform="translate(270, 80)">
+      <rect width="132" height="28" rx="6" fill="url(#pill-bg)" stroke="#34d399" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="66" y="18" class="pill-text" fill="#a7f3d0">Fleet Telematics</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 3: WEB & CLOUD ARCHITECTURE (BOTTOM-LEFT) ==================== -->
+  <g transform="translate(0, 138)">
+    <rect x="2" y="2" width="430" height="124" rx="12" fill="url(#arsenal-bg)" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.35"/>
+    <rect x="2" y="2" width="430" height="124" rx="12" fill="none" stroke="url(#glow-amber)" stroke-width="0.8"/>
+
+    <circle cx="24" cy="24" r="4.5" fill="#fbbf24" filter="url(#soft-glow)" class="dot-amber"/>
+    <text x="38" y="28" class="cat-title" fill="#fbbf24">WEB &amp; CLOUD ARCHITECTURE</text>
+    <text x="410" y="27" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="end">// 03_SYSTEMS</text>
+
+    <!-- Row 1 Pills -->
+    <g transform="translate(18, 44)">
+      <rect width="84" height="28" rx="6" fill="url(#pill-bg)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#38bdf8"/>
+      <text x="50" y="18" class="pill-text">React</text>
+    </g>
+    <g transform="translate(110, 44)">
+      <rect width="90" height="28" rx="6" fill="url(#pill-bg)" stroke="#22c55e" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#22c55e"/>
+      <text x="53" y="18" class="pill-text">Node.js</text>
+    </g>
+    <g transform="translate(208, 44)">
+      <rect width="90" height="28" rx="6" fill="url(#pill-bg)" stroke="#a855f7" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#a855f7"/>
+      <text x="53" y="18" class="pill-text">Express</text>
+    </g>
+    <g transform="translate(306, 44)">
+      <rect width="104" height="28" rx="6" fill="url(#pill-bg)" stroke="#f472b6" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#f472b6"/>
+      <text x="60" y="18" class="pill-text">REST APIs</text>
+    </g>
+
+    <!-- Row 2 Pills -->
+    <g transform="translate(18, 80)">
+      <rect width="118" height="28" rx="6" fill="url(#pill-bg)" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="59" y="18" class="pill-text" fill="#a5f3fc">Tailwind CSS</text>
+    </g>
+    <g transform="translate(144, 80)">
+      <rect width="100" height="28" rx="6" fill="url(#pill-bg)" stroke="#a855f7" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="50" y="18" class="pill-text" fill="#e9d5ff">Bootstrap</text>
+    </g>
+    <g transform="translate(252, 80)">
+      <rect width="158" height="28" rx="6" fill="url(#pill-bg)" stroke="#f43f5e" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="79" y="18" class="pill-text" fill="#fecdd3">Full-Stack Platforms</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 4: DEVELOPER ECOSYSTEM (BOTTOM-RIGHT) ==================== -->
+  <g transform="translate(450, 138)">
+    <rect x="2" y="2" width="426" height="124" rx="12" fill="url(#arsenal-bg)" stroke="#34d399" stroke-width="1" stroke-opacity="0.35"/>
+    <rect x="2" y="2" width="426" height="124" rx="12" fill="none" stroke="url(#glow-emerald)" stroke-width="0.8"/>
+
+    <circle cx="24" cy="24" r="4.5" fill="#34d399" filter="url(#soft-glow)" class="dot-emerald"/>
+    <text x="38" y="28" class="cat-title" fill="#34d399">DEVELOPER ECOSYSTEM</text>
+    <text x="406" y="27" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="end">// 04_TOOLING</text>
+
+    <!-- Row 1 Pills -->
+    <g transform="translate(18, 44)">
+      <rect width="70" height="28" rx="6" fill="url(#pill-bg)" stroke="#f97316" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#f97316"/>
+      <text x="43" y="18" class="pill-text">Git</text>
+    </g>
+    <g transform="translate(96, 44)">
+      <rect width="90" height="28" rx="6" fill="url(#pill-bg)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#c084fc"/>
+      <text x="53" y="18" class="pill-text">GitHub</text>
+    </g>
+    <g transform="translate(194, 44)">
+      <rect width="96" height="28" rx="6" fill="url(#pill-bg)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#38bdf8"/>
+      <text x="56" y="18" class="pill-text">VS Code</text>
+    </g>
+    <g transform="translate(298, 44)">
+      <rect width="104" height="28" rx="6" fill="url(#pill-bg)" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.6"/>
+      <circle cx="12" cy="14" r="3" fill="#fbbf24"/>
+      <text x="60" y="18" class="pill-text">Linux OS</text>
+    </g>
+
+    <!-- Row 2 Pills -->
+    <g transform="translate(18, 80)">
+      <rect width="112" height="28" rx="6" fill="url(#pill-bg)" stroke="#22c55e" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="56" y="18" class="pill-text" fill="#bbf7d0">Bash / Shell</text>
+    </g>
+    <g transform="translate(138, 80)">
+      <rect width="128" height="28" rx="6" fill="url(#pill-bg)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="64" y="18" class="pill-text" fill="#c7d2fe">Serial Monitor</text>
+    </g>
+    <g transform="translate(274, 80)">
+      <rect width="128" height="28" rx="6" fill="url(#pill-bg)" stroke="#f472b6" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="64" y="18" class="pill-text" fill="#fbcfe8">HW Debugging</text>
+    </g>
+  </g>
+</svg>

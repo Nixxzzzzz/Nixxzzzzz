@@ -1,0 +1,120 @@
+<svg viewBox="0 0 880 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sonia Engineering Journey and Passion">
+  <defs>
+    <linearGradient id="journey-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140f29"/>
+      <stop offset="100%" stop-color="#0a0717"/>
+    </linearGradient>
+
+    <linearGradient id="card-col-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1236"/>
+      <stop offset="100%" stop-color="#100b21"/>
+    </linearGradient>
+
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <linearGradient id="grad-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <filter id="blur-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes trackPulse {
+        0%, 100% { stroke-opacity: 0.3; }
+        50% { stroke-opacity: 0.9; filter: drop-shadow(0 0 4px #ec4899); }
+      }
+      @keyframes nodeBlink {
+        0%, 100% { r: 4; opacity: 0.7; }
+        50% { r: 6; opacity: 1; filter: drop-shadow(0 0 6px #38bdf8); }
+      }
+      .pulse-wire { animation: trackPulse 3s ease-in-out infinite; }
+      .node-anim { animation: nodeBlink 2.5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Container Base -->
+  <rect x="2" y="2" width="876" height="246" rx="14" fill="url(#journey-bg)" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.35"/>
+
+  <!-- Top Quote Banner -->
+  <g transform="translate(24, 18)">
+    <rect width="832" height="52" rx="8" fill="#1b1338" stroke="#f472b6" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="18" y="22" font-family="'Orbitron', monospace" font-size="16" fill="#f472b6" font-weight="700">“</text>
+    <text x="36" y="31" font-family="'Inter', -apple-system, sans-serif" font-size="12.5" font-style="italic" fill="#f1f5f9" font-weight="500">
+      As a college student pursuing both electronics and computer science, I am on a journey to unravel the wonders of technology.
+    </text>
+    <text x="814" y="38" font-family="'Orbitron', monospace" font-size="16" fill="#f472b6" font-weight="700" text-anchor="end">”</text>
+  </g>
+
+  <!-- Connecting PCB Laser Track -->
+  <path d="M 160 82 L 440 82 L 720 82" stroke="#ec4899" stroke-width="1" stroke-dasharray="4, 4" fill="none" class="pulse-wire"/>
+
+  <!-- 3 Pillar Bento Columns -->
+  <!-- ==================== PILLAR 1: CURRENT FOCUS ==================== -->
+  <g transform="translate(24, 88)">
+    <rect width="268" height="142" rx="10" fill="url(#card-col-bg)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4"/>
+    <circle cx="20" cy="22" r="4.5" fill="#38bdf8" class="node-anim"/>
+    
+    <text x="34" y="26" font-family="'Orbitron', monospace" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.5">CURRENT FOCUS</text>
+    <text x="250" y="25" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="end">01</text>
+
+    <line x1="16" y1="40" x2="252" y2="40" stroke="#38bdf8" stroke-opacity="0.2"/>
+
+    <text x="16" y="64" font-family="'Inter', sans-serif" font-size="11.5" fill="#cbd5e1" font-weight="600">Telematics &amp; Fleet Systems</text>
+    <text x="16" y="86" font-family="'Inter', sans-serif" font-size="10.5" fill="#94a3b8">Real-time GPS coordinate streaming, dispatch logic, and vehicle tracking engines.</text>
+
+    <!-- Mini status badge -->
+    <rect x="16" y="108" width="118" height="20" rx="4" fill="#0c4a6e" fill-opacity="0.5" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="75" y="122" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#7dd3fc" text-anchor="middle">ACTIVE DISPATCH</text>
+  </g>
+
+  <!-- ==================== PILLAR 2: CONTINUOUS LEARNING ==================== -->
+  <g transform="translate(306, 88)">
+    <rect width="268" height="142" rx="10" fill="url(#card-col-bg)" stroke="#ec4899" stroke-width="1" stroke-opacity="0.4"/>
+    <circle cx="20" cy="22" r="4.5" fill="#f472b6" class="node-anim"/>
+
+    <text x="34" y="26" font-family="'Orbitron', monospace" font-size="11" font-weight="700" fill="#f472b6" letter-spacing="0.5">CONTINUOUS LEARNING</text>
+    <text x="250" y="25" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="end">02</text>
+
+    <line x1="16" y1="40" x2="252" y2="40" stroke="#ec4899" stroke-opacity="0.2"/>
+
+    <text x="16" y="64" font-family="'Inter', sans-serif" font-size="11.5" fill="#cbd5e1" font-weight="600">Embedded &amp; Cloud Hardware</text>
+    <text x="16" y="86" font-family="'Inter', sans-serif" font-size="10.5" fill="#94a3b8">Microcontroller architecture, modern TypeScript full-stack, and IoT sensor networks.</text>
+
+    <!-- Mini status badge -->
+    <rect x="16" y="108" width="124" height="20" rx="4" fill="#701a75" fill-opacity="0.5" stroke="#ec4899" stroke-width="0.8"/>
+    <text x="78" y="122" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#f472b6" text-anchor="middle">DAILY ITERATION</text>
+  </g>
+
+  <!-- ==================== PILLAR 3: CORE ASPIRATION ==================== -->
+  <g transform="translate(588, 88)">
+    <rect width="268" height="142" rx="10" fill="url(#card-col-bg)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.4"/>
+    <circle cx="20" cy="22" r="4.5" fill="#c084fc" class="node-anim"/>
+
+    <text x="34" y="26" font-family="'Orbitron', monospace" font-size="11" font-weight="700" fill="#c084fc" letter-spacing="0.5">CORE ASPIRATION</text>
+    <text x="250" y="25" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="end">03</text>
+
+    <line x1="16" y1="40" x2="252" y2="40" stroke="#c084fc" stroke-opacity="0.2"/>
+
+    <text x="16" y="64" font-family="'Inter', sans-serif" font-size="11.5" fill="#cbd5e1" font-weight="600">Silicon Meets Software</text>
+    <text x="16" y="86" font-family="'Inter', sans-serif" font-size="10.5" fill="#94a3b8">Unraveling the wonders of technology by fusing physical circuits with intelligent digital software.</text>
+
+    <!-- Mini status badge -->
+    <rect x="16" y="108" width="130" height="20" rx="4" fill="#3b0764" fill-opacity="0.5" stroke="#c084fc" stroke-width="0.8"/>
+    <text x="81" y="122" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#d8b4fe" text-anchor="middle">THE HORIZON</text>
+  </g>
+</svg>

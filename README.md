@@ -7,17 +7,17 @@
 
 <!-- ==================== TELEMETRY HUD BAR ==================== -->
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Nixxzzzzz&style=flat-square&color=f472b6&label=PROFILE+VIEWS" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=Nixxzzzzz&style=for-the-badge&color=f472b6&label=PROFILE+VIEWS" alt="Profile views"/>
   &nbsp;
-  <img src="https://img.shields.io/github/followers/Nixxzzzzz?style=flat-square&label=FOLLOWERS&color=c084fc" alt="Followers"/>
+  <img src="https://img.shields.io/github/followers/Nixxzzzzz?style=for-the-badge&label=FOLLOWERS&color=c084fc&logo=github&logoColor=white&labelColor=140f26" alt="Followers"/>
   &nbsp;
   <a href="https://github.com/Nixxzzzzz?tab=repositories" target="_blank">
-    <img src="https://img.shields.io/badge/Repositories-7%20Projects-38bdf8?style=flat-square&logo=git&logoColor=white" alt="Repositories"/>
+    <img src="https://img.shields.io/badge/REPOSITORIES-7%20PROJECTS-38bdf8?style=for-the-badge&logo=git&logoColor=white&labelColor=140f26" alt="Repositories"/>
   </a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Discipline-ECE%20%E2%9C%95%20CSE-ec4899?style=flat-square&logo=sparkles&logoColor=white" alt="Discipline"/>
+  <img src="https://img.shields.io/badge/DISCIPLINE-ECE%20%E2%9C%95%20CSE-ec4899?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=140f26" alt="Discipline"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/Status-Building%20%26%20Learning-34d399?style=flat-square&logo=satellite&logoColor=white" alt="Status"/>
+  <img src="https://img.shields.io/badge/STATUS-BUILDING%20%26%20LEARNING-34d399?style=for-the-badge&logo=satellite&logoColor=white&labelColor=140f26" alt="Status"/>
 </div>
 
 <br/>
@@ -63,18 +63,11 @@
 ### `// 02. TECHNICAL ARSENAL & SYSTEM STACK`
 
 <div align="center">
+  <img src="assets/tech-arsenal-bento.svg" width="100%" alt="Technical Arsenal and System Stack"/>
 
-| Domain | Technologies, Frameworks &amp; Protocols |
-| :--- | :--- |
-| **Languages** | `Python` • `TypeScript` • `JavaScript` • `C/C++` • `HTML5` • `CSS3` • `SQL` |
-| **Electronics &amp; Hardware** | `Microcontrollers` • `Arduino` • `ESP32` • `Circuit Design` • `IoT Sensors` • `Fleet Telematics` |
-| **Web &amp; Cloud Architecture** | `React` • `Node.js` • `Express` • `REST APIs` • `Tailwind CSS` • `Bootstrap` |
-| **Developer Ecosystem** | `Git` • `GitHub` • `VS Code` • `Linux` • `Bash` |
+  <br/><br/>
 
-<br/>
-
-<img src="https://skillicons.dev/icons?i=python,ts,js,cpp,html,css,react,nodejs,express,arduino,git,github,vscode,linux&perline=7" alt="Sonia Tech Stack"/>
-
+  <img src="https://skillicons.dev/icons?i=python,ts,js,cpp,html,css,react,nodejs,express,arduino,git,github,vscode,linux&perline=14" alt="Sonia Tech Stack"/>
 </div>
 
 <br/>
@@ -85,16 +78,18 @@
 <div align="center">
 
 <a href="https://github.com/Nixxzzzzz" target="_blank">
-  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Nixxzzzzz&show_icons=true&hide_border=true&border_radius=12&include_all_commits=true&bg_color=00000000&title_color=f472b6&icon_color=c084fc&text_color=e9d5ff&rank_icon=github" alt="Sonia GitHub stats"/>
+  <img height="175" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Nixxzzzzz&show_icons=true&hide_border=false&border_radius=14&border_color=c084fc&include_all_commits=true&bg_color=0e0919&title_color=f472b6&icon_color=38bdf8&text_color=e9d5ff&rank_icon=github" alt="Sonia GitHub stats"/>
 </a>
 &nbsp;
 <a href="https://github.com/Nixxzzzzz" target="_blank">
-  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Nixxzzzzz&layout=compact&langs_count=8&hide_border=true&border_radius=12&bg_color=00000000&title_color=f472b6&text_color=e9d5ff" alt="Sonia Top languages"/>
+  <img height="175" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Nixxzzzzz&layout=compact&langs_count=8&hide_border=false&border_radius=14&border_color=c084fc&bg_color=0e0919&title_color=f472b6&text_color=e9d5ff" alt="Sonia Top languages"/>
 </a>
 
 <br/><br/>
 
-<img width="94%" src="https://streak-stats.demolab.com?user=Nixxzzzzz&hide_border=true&border_radius=12&background=00000000&stroke=f472b6&ring=c084fc&fire=f472b6&currStreakNum=38bdf8&sideNums=e9d5ff&currStreakLabel=f472b6&sideLabels=e9d5ff&dates=94a3b8" alt="Sonia GitHub streak"/>
+<a href="https://github.com/Nixxzzzzz" target="_blank">
+  <img width="94%" src="https://streak-stats.demolab.com?user=Nixxzzzzz&hide_border=false&border_radius=14&border=c084fc&background=0e0919&stroke=f472b6&ring=c084fc&fire=f472b6&currStreakNum=38bdf8&sideNums=e9d5ff&currStreakLabel=f472b6&sideLabels=e9d5ff&dates=cbd5e1" alt="Sonia GitHub streak"/>
+</a>
 
 </div>
 
@@ -104,30 +99,26 @@
 ### `// 04. ENGINEERING JOURNEY & PASSION`
 
 <div align="center">
-
-> *"As a college student pursuing both electronics and computer science, I am on a journey to unravel the wonders of technology."*
-
+  <img src="assets/journey-card.svg" width="100%" alt="Engineering Journey and Passion"/>
 </div>
-
-I am deeply fascinated by the boundary where **physical hardware circuits meet intelligent software**. Whether it’s writing firmware for microcontrollers, streaming real-time telematics coordinates, or engineering responsive digital platforms, I love transforming technical curiosity into working systems.
-
-- 🔭 **Current Focus:** Telematics dispatch platforms, IoT device communication, and full-stack web applications.
-- 🌱 **Continuous Learning:** Embedded systems architecture, advanced TypeScript, and cloud-connected hardware.
-- 💡 **Aspiration:** Bridging the gap between physical silicon and elegant digital software.
 
 <br/>
 
-<!-- ==================== CONNECT & DISPATCH ==================== -->
+<!-- ==================== CONNECT & COLLABORATE ==================== -->
 ### `// 05. CONNECT & COLLABORATE`
 
 <div align="center">
 
 <a href="https://github.com/Nixxzzzzz" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-Nixxzzzzz-140f26?style=for-the-badge&logo=github&logoColor=f472b6" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/GitHub-Nixxzzzzz-ec4899?style=for-the-badge&logo=github&logoColor=white&labelColor=140f26" alt="GitHub Profile"/>
 </a>
 &nbsp;
 <a href="https://github.com/Nixxzzzzz?tab=repositories" target="_blank">
-  <img src="https://img.shields.io/badge/Explore%20Repositories-7%20Projects-c084fc?style=for-the-badge&logo=git&logoColor=white" alt="Repositories"/>
+  <img src="https://img.shields.io/badge/Explore%20Repositories-7%20Projects-38bdf8?style=for-the-badge&logo=git&logoColor=white&labelColor=140f26" alt="Repositories"/>
+</a>
+&nbsp;
+<a href="https://github.com/Nixxzzzzz?tab=stars" target="_blank">
+  <img src="https://img.shields.io/badge/Star%20Showcase-Featured-c084fc?style=for-the-badge&logo=star&logoColor=white&labelColor=140f26" alt="Star Repositories"/>
 </a>
 
 </div>
@@ -148,13 +139,7 @@ I am deeply fascinated by the boundary where **physical hardware circuits meet i
 
 <br/>
 
-<!-- ==================== MINIMALIST CYBER FOOTER ==================== -->
+<!-- ==================== FOOTER TELEMETRY ==================== -->
 <div align="center">
-
-```text
-[ STATUS: SYSTEM NOMINAL // 7 REPOSITORIES ACTIVE // OPEN FOR EMBEDDED & FULL-STACK INITIATIVES ✨ ]
-```
-
-<sub>© Sonia (@Nixxzzzzz) · Electronics &amp; Computer Science Engineer</sub>
-
+  <sub><code>[ STATUS : ONLINE 24/7 ] ✦ [ CORE DISCIPLINE : ECE✕CSE ] ✦ [ EMBEDDED CIRCUITS &amp; CLOUD SOFTWARE INTELLIGENCE ]</code></sub>
 </div>
